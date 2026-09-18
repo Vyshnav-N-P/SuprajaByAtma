@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/../public/images/supraja_logo.png"
 import {
   Sparkles,
   Play,
@@ -428,8 +430,9 @@ export default function WebsiteRevealPage() {
               {/* Inner content */}
               <div className="relative z-10 flex flex-col items-center px-10 text-center">
                 {/* Sparkle icon orb */}
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#1B4D3E] to-[#2D6A4F] flex items-center justify-center shadow-[0_0_30px_rgba(45,106,79,0.8),0_0_60px_rgba(197,168,128,0.25)] border border-[#C5A880]/60 mb-5">
-                  <Sparkles className="w-7 h-7 text-[#C5A880]" />
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#1B4D3E] to-[#2D6A4F] flex items-center justify-center shadow-[0_0_30px_rgba(45,106,79,0.8),0_0_60px_rgba(197,168,128,0.25)] border border-[#C5A880]/60 mb-5">
+                  {/* <Sparkles className="w-7 h-7 text-[#C5A880]" /> */}
+                  <Image alt="Supraja Logo" src={Logo} className="scale-200"/>
                 </div>
 
                 {/* Brand Name */}

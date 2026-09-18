@@ -52,7 +52,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             </p>
             <div className="space-y-3">
               <a
-                href={`https://wa.me/918136894093?text=Hi%20ATMA!%20I%20have%20submitted%20the%20consultation%20request%20for%20The%20Fertility%20Reset.`}
+                href={`https://wa.me/916282515231?text=Hi%20ATMA!%20I%20have%20submitted%20the%20consultation%20request%20for%20The%20Fertility%20Reset.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-6 rounded-2xl bg-[#25D366] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2"

@@ -79,13 +79,13 @@ export default function ConversionSection({ onOpenBooking }: ConversionProps) {
                 21-day programme, doctor availability, and pricing.
               </p>
               <a
-                href="https://wa.me/918136894093?text=Hello%20ATMA%20Wellness!%20I%20would%20like%20to%20book%20The%20Fertility%20Reset%20assessment%20for%20my%20partner%20and%20myself."
+                href="https://wa.me/916282515231?text=Hello%20ATMA%20Wellness!%20I%20would%20like%20to%20book%20The%20Fertility%20Reset%20assessment%20for%20my%20partner%20and%20myself."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-6 rounded-2xl bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold text-sm flex items-center justify-center gap-2.5 shadow-md shadow-[#25D366]/20 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Message on WhatsApp (+91 81368 94093)</span>
+                <span>Message on WhatsApp (+91 62825 15231)</span>
               </a>
             </div>
 
@@ -107,11 +107,11 @@ export default function ConversionSection({ onOpenBooking }: ConversionProps) {
                 PM IST for confidential discussions.
               </p>
               <a
-                href="tel:+918136894093"
+                href="tel:+916282515231"
                 className="w-full py-3.5 px-6 rounded-2xl bg-[#1B4D3E] hover:bg-[#12382D] text-white font-bold text-sm flex items-center justify-center gap-2.5 shadow-md shadow-[#1B4D3E]/20 transition-all"
               >
                 <Phone className="w-4 h-4 text-[#C5A880]" />
-                <span>Call +91 81368 94093</span>
+                <span>Call +91 62825 15231</span>
               </a>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function ConversionSection({ onOpenBooking }: ConversionProps) {
                     team will contact you within 2 hours to confirm your consultation schedule.
                   </p>
                   <a
-                    href={`https://wa.me/918136894093?text=Hi%20ATMA!%20I%20just%20submitted%20the%20intake%20form%20for%20${encodeURIComponent(
+                    href={`https://wa.me/916282515231?text=Hi%20ATMA!%20I%20just%20submitted%20the%20intake%20form%20for%20${encodeURIComponent(
                       formData.partner1Name
                     )}%20and%20${encodeURIComponent(formData.partner2Name)}.`}
                     target="_blank"
@@ -253,7 +253,7 @@ export default function ConversionSection({ onOpenBooking }: ConversionProps) {
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 62825 15231"
                         className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-gray-200 text-sm focus:outline-none focus:border-[#1B4D3E] focus:bg-white transition-colors"
                       />
                     </div>

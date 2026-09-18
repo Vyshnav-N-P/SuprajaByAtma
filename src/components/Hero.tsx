@@ -66,7 +66,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             </button>
 
             <a
-              href="https://wa.me/918136894093?text=Hi%20ATMA!%20I%20would%20like%20to%20consult%20regarding%20The%20Fertility%20Reset%20programme%20for%20couples."
+              href="https://wa.me/916282515231?text=Hi%20ATMA!%20I%20would%20like%20to%20consult%20regarding%20The%20Fertility%20Reset%20programme%20for%20couples."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto min-w-[210px] px-8 py-4 rounded-full bg-white hover:bg-[#FAF6F0] text-[#12382D] border border-[#25D366]/40 hover:border-[#25D366] font-semibold text-sm sm:text-base tracking-wide shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center gap-3 group"

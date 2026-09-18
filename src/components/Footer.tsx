@@ -39,7 +39,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://wa.me/918136894093"
+                href="https://wa.me/916282515231"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366]/20 hover:bg-[#25D366]/30 text-[#25D366] text-xs font-semibold border border-[#25D366]/30 transition-colors"
@@ -121,11 +121,11 @@ export default function Footer() {
             </p>
             <div className="space-y-3 text-xs sm:text-sm text-gray-300">
               <a
-                href="tel:+918136894093"
+                href="tel:+916282515231"
                 className="flex items-center gap-2.5 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#C5A880]" />
-                <span>+91 81368 94093</span>
+                <span>+91 62825 15231</span>
               </a>
               <a
                 href="mailto:care@atmawellness.com"

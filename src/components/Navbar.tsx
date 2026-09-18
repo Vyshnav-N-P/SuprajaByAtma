@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { Sparkles, Calendar, Phone, MessageCircle, Menu, X, HeartHandshake } from "lucide-react";
-
+import Logo from "@/../public/images/supraja_logo.png"
 interface NavbarProps {
   onOpenBooking: () => void;
 }
@@ -38,7 +39,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#1B4D3E] to-[#2D6A4F] flex items-center justify-center text-white shadow-sm transition-transform duration-300 group-hover:scale-105">
-            <Sparkles className="w-4 h-4 text-[#E8DCC4]" />
+            <Image src={Logo} alt="supraja-logo" className="scale-200"/>
           </div>
           <div className="flex flex-col">
             <span className="font-serif font-bold text-xl sm:text-2xl text-[#12382D] tracking-tight leading-none">
@@ -67,7 +68,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
         {/* Desktop Actions */}
         <div className="hidden sm:flex items-center gap-3">
           <a
-            href="https://wa.me/918136894093?text=Hello%20ATMA%20Wellness%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Fertility%20Reset%2021-Day%20Programme."
+            href="https://wa.me/916282515231?text=Hello%20ATMA%20Wellness%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Fertility%20Reset%2021-Day%20Programme."
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-[#FAF6F0] hover:bg-[#F3EDE2] text-[#2D6A4F] border border-[#E8DCC4] transition-colors"
@@ -119,7 +120,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             ))}
             <div className="pt-3 border-t border-gray-100 flex flex-col gap-2.5">
               <a
-                href="https://wa.me/918136894093?text=Hello%20ATMA%20Wellness%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Fertility%20Reset%2021-Day%20Programme."
+                href="https://wa.me/916282515231?text=Hello%20ATMA%20Wellness%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Fertility%20Reset%2021-Day%20Programme."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#25D366]/10 text-[#128C7E] font-medium text-sm"
