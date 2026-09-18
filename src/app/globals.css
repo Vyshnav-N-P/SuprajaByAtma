@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-900: #0d281e;
+    --color-primary-800: #12382d;
+    --color-primary-700: #1b4d3e;
+    --color-primary-600: #2d6a4f;
+    --color-primary-500: #40916c;
+    --color-primary-100: #d8f3dc;
+    --color-primary-50: #ebf7ee;
+
+    --color-gold-600: #9e7d53;
+    --color-gold-500: #c5a880;
+    --color-gold-400: #d4af37;
+    --color-gold-100: #f7efe6;
+
+    --color-terracotta: #c87d69;
+    --color-terracotta-light: #fbeee9;
+
+    --color-cream: #faf8f5;
+    --color-cream-warm: #f4ede2;
+    --color-cream-card: #ffffff;
+
+    --color-charcoal: #192621;
+    --color-muted: #5f7369;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    overflow-x: hidden;
+  }
+}
+
+/* Gaspetworld-inspired floating keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes float-delay {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-1.5deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-22px) rotate(1deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(45, 106, 79, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 16px rgba(45, 106, 79, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(45, 106, 79, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-delay 8s ease-in-out 2s infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 10s ease-in-out 1s infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.5s infinite;
+}
+
+/* Glassmorphism and Luxury Accents */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(18, 56, 45, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 40px -15px rgba(18, 56, 45, 0.06);
+}
+
+.luxury-gradient-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(235, 247, 238, 0.8) 0%, rgba(250, 248, 245, 1) 50%, rgba(244, 237, 226, 0.6) 100%);
+}
+
+.luxury-hero-bg {
+  background: radial-gradient(circle at 80% 20%, rgba(216, 243, 220, 0.45) 0%, rgba(247, 239, 230, 0.65) 45%, rgba(250, 248, 245, 1) 85%);
+}
+
+.leaf-pattern-bg {
+  background-image: radial-gradient(rgba(27, 77, 62, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b4d3e;
+}
