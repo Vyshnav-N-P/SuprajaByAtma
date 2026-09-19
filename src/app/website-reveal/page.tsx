@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export default function WebsiteRevealPage() {
-  const TOTAL_SECONDS = 15;
+  const TOTAL_SECONDS = 40;
   const [stage, setStage] = useState<"idle" | "counting" | "revealed">("idle");
   const [secondsLeft, setSecondsLeft] = useState(TOTAL_SECONDS);
   const [currentDayIdx, setCurrentDayIdx] = useState(0);
@@ -303,7 +303,7 @@ export default function WebsiteRevealPage() {
         });
       }, 1000);
 
-      // 21 Days interval: 15,000ms / 21 = ~714ms per day
+      // 21 Days interval: 40,000ms / 21 = ~714ms per day
       const dayIntervalMs = Math.floor((TOTAL_SECONDS * 1000) / 21);
       dayTimer = setInterval(() => {
         setCurrentDayIdx((prev) => {
@@ -475,10 +475,10 @@ export default function WebsiteRevealPage() {
           </div>
         )}
 
-        {/* STAGE 2: 15s COUNTDOWN WITH 21-DAY POPUPS */}
+        {/* STAGE 2: 30s COUNTDOWN WITH 21-DAY POPUPS */}
         {stage === "counting" && (
           <div className="flex flex-col items-center w-full animate-in zoom-in-90 duration-300">
-            {/* Top Counter Section: Circular 15s Countdown */}
+            {/* Top Counter Section: Circular 30s Countdown */}
             <div className="relative w-44 h-44 sm:w-52 sm:h-52 flex items-center justify-center mb-6">
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 200 200">
                 <circle
@@ -588,7 +588,7 @@ export default function WebsiteRevealPage() {
           </div>
         )}
 
-        {/* STAGE 3: THE GRAND REVEAL (Upon finishing 15s and Day 21) */}
+        {/* STAGE 3: THE GRAND REVEAL (Upon finishing 30s and Day 21) */}
         {stage === "revealed" && (
           <div className="flex flex-col items-center animate-in zoom-in-95 duration-500 max-w-xl">
             {/* Confetti & Glow Aura */}
