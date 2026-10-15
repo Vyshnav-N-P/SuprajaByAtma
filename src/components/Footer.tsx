@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Sparkles, Phone, Mail, MapPin, MessageCircle, Heart, ArrowUp } from "lucide-react";
+import { Sparkles, Phone, Mail, MessageCircle, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -51,19 +51,19 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#C5A880] mb-4">
-              Programme
+              Programme & Sanctuaries
             </p>
             <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300">
               <li>
                 <a href="#overview" className="hover:text-white transition-colors">
-                  Fertility Reset Cover
+                  Fertility Reset & AI Vision
                 </a>
               </li>
               <li>
-                <a href="#why-atma" className="hover:text-white transition-colors">
-                  Why ATMA
+                <a href="#locations" className="hover:text-white transition-colors">
+                  IP Sanctuaries (Kottayam, Sreemoolavasam, Wayanad)
                 </a>
               </li>
               <li>
@@ -72,44 +72,46 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#protocol" className="hover:text-white transition-colors">
-                  Integrative Protocol
+                <a href="#doctors" className="hover:text-white transition-colors">
+                  Care Team & Medical Board
                 </a>
               </li>
               <li>
-                <a href="#doctors" className="hover:text-white transition-colors">
-                  Care Team & Doctors
+                <a href="#founder" className="hover:text-white transition-colors">
+                  Founder — Dr. Abhijith Karma
+                </a>
+              </li>
+              <li>
+                <a href="#interviews" className="hover:text-white transition-colors">
+                  ATMA in Conversation (Reels)
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Clinic Centres & Presence */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#C5A880] mb-4">
-              Clinical Presence
+              Sanctuaries
             </p>
-            <ul className="space-y-3 text-xs sm:text-sm text-gray-300">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold text-white">Kochi Centre</span>
-                  <p className="text-xs text-gray-400">Ernakulam & Kakkanad, Kerala</p>
-                </div>
+            <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300">
+              <li>
+                <a href="#locations" className="hover:text-white transition-colors">
+                  Kottayam Inpatient Retreat
+                </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold text-white">Kottayam Centre</span>
-                  <p className="text-xs text-gray-400">OP Clinics & Wellness Centre</p>
-                </div>
+              <li>
+                <a href="#locations" className="hover:text-white transition-colors">
+                  Sreemoolavasam Sanctuary
+                </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold text-white">Global Telehealth</span>
-                  <p className="text-xs text-gray-400">Consultations across India & GCC</p>
-                </div>
+              <li>
+                <a href="#locations" className="hover:text-white transition-colors">
+                  Wayanad Forest Retreat
+                </a>
+              </li>
+              <li>
+                <span className="text-gray-400 block pt-1">Kochi OP Center & Global Telehealth</span>
               </li>
             </ul>
           </div>

@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Sparkles, Calendar, Phone, MessageCircle, Menu, X, HeartHandshake } from "lucide-react";
-import Logo from "@/../public/images/supraja_logo.png"
+import { Calendar, MessageCircle, Menu, X } from "lucide-react";
+import Logo from "@/../public/images/supraja_logo.png";
+
 interface NavbarProps {
   onOpenBooking: () => void;
 }
@@ -22,10 +23,11 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
 
   const navLinks = [
     { name: "Overview", href: "#overview" },
-    { name: "Why ATMA", href: "#why-atma" },
+    { name: "Sanctuaries", href: "#locations" },
     { name: "21-Day Journey", href: "#journey" },
-    { name: "The Protocol", href: "#protocol" },
     { name: "Medical Team", href: "#doctors" },
+    { name: "Founder", href: "#founder" },
+    { name: "Interviews", href: "#interviews" },
     { name: "FAQ", href: "#faq" },
   ];
 

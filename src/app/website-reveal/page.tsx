@@ -28,9 +28,17 @@ export default function WebsiteRevealPage() {
   const [secondsLeft, setSecondsLeft] = useState(TOTAL_SECONDS);
   const [currentDayIdx, setCurrentDayIdx] = useState(0);
   const [soundEnabled, setSoundEnabled] = useState(true);
-  const [particles, setParticles] = useState<
+  const [particles] = useState<
     Array<{ id: number; left: number; top: number; size: number; delay: number }>
-  >([]);
+  >(() =>
+    Array.from({ length: 18 }, (_, i) => ({
+      id: i,
+      left: Math.floor(((i * 37) % 90)) + 5,
+      top: Math.floor(((i * 53) % 85)) + 8,
+      size: (i % 6) + 6,
+      delay: (i % 5) * 0.8,
+    }))
+  );
 
   // Web Audio Context for zero-dependency sound effects
   const audioCtxRef = useRef<AudioContext | null>(null);
@@ -207,17 +215,7 @@ export default function WebsiteRevealPage() {
     },
   ];
 
-  useEffect(() => {
-    // Generate random ambient floating particles
-    const generated = Array.from({ length: 18 }, (_, i) => ({
-      id: i,
-      left: Math.floor(Math.random() * 90) + 5,
-      top: Math.floor(Math.random() * 85) + 8,
-      size: Math.floor(Math.random() * 10) + 6,
-      delay: Math.random() * 4,
-    }));
-    setParticles(generated);
-  }, []);
+
 
   // Web Audio Synthesizer Beeps
   const playSound = (type: "tick" | "pop" | "chime") => {

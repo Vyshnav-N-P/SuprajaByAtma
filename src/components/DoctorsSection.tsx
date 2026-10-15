@@ -17,6 +17,7 @@ import {
 import Image from "next/image";
 import Febin_PP from "../../public/images/Febin_PP.jpeg";
 import Shakkeel_PP from "../../public/images/Shakkeel_PP.jpeg";
+import Suchithra_PP from "../../public/images/Suchithra_PP.jpg";
 interface DoctorsProps {
   onOpenBooking: () => void;
 }
@@ -86,7 +87,40 @@ export default function DoctorsSection({ onOpenBooking }: DoctorsProps) {
       location: "International & Kerala",
       avatarInitials: "DS",
       avatarBg: "from-[#C5A880] to-[#9E7D53]",
+    },
+    {
+      name: "Dr. Suchithra Viswam",
+      photo: Suchithra_PP,
+      credentials: "BAMS",
+      title: "Ayurvedic Physician & Integrative Wellness Specialist",
+      roles: [
+        "Clinical Lead: Sreemoolavasam",
+        "Specialist: Panchakarma & Women's Health",
+        "Wellness Practitioner: Lifestyle Guidance & Integrative Care",
+      ],
+      certifications: [
+        "Bachelor of Ayurvedic Medicine & Surgery (BAMS): Sri Sri College of Ayurveda, Bengaluru",
+        "Advanced Training in Panchakarma & Women's Health",
+        "Training in Therapeutic Yoga, Ayurveda Psychotherapy, Smrithi Counselling & Marma Therapy",
+      ],
+      experience: "Over 14 Years of Clinical Experience",
+      focusAreas: [
+        "Panchakarma & traditional Ayurvedic therapies",
+        "Women's health & holistic wellness",
+        "Lifestyle disorders & preventive care",
+        "Therapeutic yoga & mindful living",
+        "Personalised wellness guidance & integrative care",
+      ],
+      fullBio:
+        "Dr. Suchithra Viswam brings over 14 years of clinical experience in Ayurveda, specialising in Panchakarma, women's health, lifestyle disorders, and integrative wellness. She holds a Bachelor of Ayurvedic Medicine & Surgery (BAMS) from Sri Sri College of Ayurveda, Bengaluru, with advanced training in Panchakarma, women's health, therapeutic yoga, Ayurveda psychotherapy, Smrithi counselling, and Marma therapy. At Sreemoolavasam, she leads the clinic team and personally guides each guest through their wellness journey. Her approach combines the depth of traditional Ayurveda with personalised care, lifestyle guidance, and mindful practices to create safe, meaningful, and restorative wellness experiences.",
+      tag: "Ayurvedic & Integrative Wellness Specialist",
+      location: "Sreemoolavasam",
+      avatarInitials: "SV",
+      avatarBg: "from-[#C5A880] to-[#9E7D53]",
+      philosophy:
+        "Every guest is unique; every wellness journey should be personalised.",
     }
+
   ];
 
   return (
